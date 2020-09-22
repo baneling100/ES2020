@@ -545,6 +545,7 @@ def fine_tune(net, loader):
     print('Finished training. Train time was:', elapsed_train_time)
 
 def test(net, loader):
+    net.eval()
     correct = 0
     total = 0
 
